@@ -78,6 +78,18 @@ To evaluate the model, run the `main.ipynb` notebook after training: providing `
 ```bash
 tensorboard --logdir logs
 ```
+
+## Reproducibility
+We expose a `seed` parameter in `args_dict`. To reproduce the 3‑seed CIFAR‑100 check:
+
+```
+papermill main.ipynb logs/CIFAR-100/seed-101.ipynb -p args_dict '{"dataset":"CIFAR-100","epochs":200,"Routing_N":3,"seed":101}'
+papermill main.ipynb logs/CIFAR-100/seed-202.ipynb -p args_dict '{"dataset":"CIFAR-100","epochs":200,"Routing_N":3,"seed":202}'
+papermill main.ipynb logs/CIFAR-100/seed-303.ipynb -p args_dict '{"dataset":"CIFAR-100","epochs":200,"Routing_N":3,"seed":303}'
+
+python aggregate.py CIFAR-100
+```
+
 ## Citation
 If you find this code useful, please consider citing our paper:
 
