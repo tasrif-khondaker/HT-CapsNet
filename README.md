@@ -1,6 +1,6 @@
 # Taxonomy-Guided Routing in Capsule Network for Hierarchical Image Classification
 
-This is the official implementation of the paper titled "Taxonomy-Guided Routing in Capsule Network for Hierarchical Image Classification" Khondaker Tasrif Noor, Wei Luo, Antonio Robles-Kelly, Leo Yu Zhang, and Mohamed Reda Bouadjenek. The paper is currently under review on Knlowledge-Based Systems. Preprint available at [SSRN](https://ssrn.com/abstract=5127434).
+This is the official implementation of the paper titled "Taxonomy-guided routing in capsule network for hierarchical image classification" by Khondaker Tasrif Noor, Wei Luo, Antonio Robles-Kelly, Leo Yu Zhang, and Mohamed Reda Bouadjenek. The paper is available on [Knowledge-Based Systems](https://doi.org/10.1016/j.knosys.2025.114444).
 
 ## Abstract
 Hierarchical multi-label classification in computer vision presents significant challenges in maintaining consistency across different levels of class granularity while capturing fine-grained visual details. This paper presents Taxonomy-aware Capsule Network (HT-CapsNet), a novel capsule network architecture that explicitly incorporates taxonomic relationships into its routing mechanism to address these challenges. Our key innovation lies in a taxonomy-aware routing algorithm that dynamically adjusts capsule connections based on known hierarchical relationships, enabling more effective learning of hierarchical features while enforcing taxonomic consistency. Extensive experiments on six benchmark datasets, including Fashion-MNIST, Marine-Tree, CIFAR-10, CIFAR-100, CUB-200-2011, and Stanford Cars, demonstrate that HT-CapsNet significantly outperforms existing methods across various hierarchical classification metrics. Notably, on CUB-200-2011, HT-CapsNet achieves absolute improvements of $10.32\%$, $10.2\%$, $10.3\%$, and $8.55\%$ in hierarchical accuracy, F1-score, consistency, and exact match, respectively, compared to the best-performing baseline. On the Stanford Cars dataset, the model improves upon the best baseline by $21.69\%$, $18.29\%$, $37.34\%$, and $19.95\%$ in the same metrics, demonstrating the robustness and effectiveness of our approach for complex hierarchical classification tasks.
@@ -94,15 +94,22 @@ python aggregate.py CIFAR-100
 If you find this code useful, please consider citing our paper:
 
 ```bibtex
-@article{noor2023taxonomy,
-  title={Taxonomy-Guided Routing in Capsule Network for Hierarchical Image Classification},
-  author={Noor, Khondaker Tasrif and Luo, Wei and Robles-Kelly, Antonio and Zhang, Leo Yu and Bouadjenek, Mohamed Reda},
-  journal={Available at SSRN 5127434},
-  year={2025},
-  publisher={SSRN},
-  doi={https://dx.doi.org/10.2139/ssrn.5127434},
+@article{noorTaxonomyguided2025,
+  title = {Taxonomy-Guided Routing in Capsule Network for Hierarchical Image Classification},
+  author = {Noor, Khondaker Tasrif and Luo, Wei and Robles-Kelly, Antonio and Zhang, Leo Yu and Bouadjenek, Mohamed Reda},
+  date = {2025-11-04},
+  journaltitle = {Knowledge-Based Systems},
+  shortjournal = {Knowledge-Based Systems},
+  volume = {329},
+  pages = {114444},
+  issn = {0950-7051},
+  doi = {10.1016/j.knosys.2025.114444},
+  langid = {british}
 }
 ```
-
+or
+```
+K. T. Noor, W. Luo, A. Robles-Kelly, L. Y. Zhang, and M. R. Bouadjenek, “Taxonomy-guided routing in capsule network for hierarchical image classification,” Knowledge-Based Systems, vol. 329, p. 114444, Nov. 2025, doi: 10.1016/j.knosys.2025.114444.
+```
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
